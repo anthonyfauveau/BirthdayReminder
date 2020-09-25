@@ -23,7 +23,7 @@ public class LoginController {
 	@PostMapping(value = {"","/"}, produces = APPLICATION_JSON_VALUE)
 	public Optional<User> getLogin(@RequestBody User user){
 		
-		Optional<User> userVerif = userservice.login(user.getEmail(), user.getPassword());
+		Optional<User> userVerif = userservice.login(user.getUsername(), user.getPassword());
 		
 	    return userVerif;
 	}
