@@ -11,5 +11,4 @@ public interface UserRepository extends CrudRepository<User, Long>{
 
 	@Query(value = "SELECT u FROM User u where u.username = ?1 and u.password = ?2 ")
 	Optional<User> login(String username,String password);
-		
 }

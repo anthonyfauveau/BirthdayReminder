@@ -4,8 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import fr.anthony.birthdayReminder.models.Birthday;
 
+public interface BirthdayRepository extends CrudRepository<Birthday, Long> {
 
-
-public interface BirthdayRepository  extends CrudRepository<Birthday, Long>{
-	
 }
